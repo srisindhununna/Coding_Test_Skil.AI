@@ -1,0 +1,11 @@
+import pandas as pd
+df=pd.read_csv("task1.csv")
+grouped=df[df["gender"]=='Male'].groupby('city')['population'].sum()
+city_with_most_population=grouped.idxmax()
+##int(grouped)
+##int(f"The city with most population is :", city_with_most_population,"with population",max(grouped))
+df1=pd.DataFrame(df)
+df2=df.apply(lambda x: x.astype(str).str.upper())
+##int(df2)
+df3= df2.task1.csv(skipinitialspace=True)
+print(df3)
